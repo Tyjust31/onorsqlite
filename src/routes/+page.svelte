@@ -337,7 +337,7 @@
         <div class="form-actions">
           <button 
             class="btn-primary" 
-            on:click={handleLogin}
+            onclick={handleLogin}
             disabled={isLoading}
           >
             {#if isLoading}
@@ -355,7 +355,7 @@
           
           <button 
             class="btn-secondary enhanced" 
-            on:click={handleRegister}
+            onclick={handleRegister}
             disabled={isLoading}
           >
             {#if isLoading}
@@ -382,9 +382,9 @@
 
         <!-- Debug/Test buttons (remove in production) -->
         <div class="debug-actions">
-          <button class="debug-btn" on:click={handleLogout}>🔓 Déconnexion</button>
-          <button class="debug-btn" on:click={clearAllUsers}>🗑️ Effacer tout</button>
-          <button class="debug-btn" on:click={testNavigation}>🧪 Test Navigation</button>
+          <button class="debug-btn" onclick={handleLogout}>🔓 Déconnexion</button>
+          <button class="debug-btn" onclick={clearAllUsers}>🗑️ Effacer tout</button>
+          <button class="debug-btn" onclick={testNavigation}>🧪 Test Navigation</button>
         </div>
       </div>
     </div>
